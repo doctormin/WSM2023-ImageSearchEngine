@@ -1,0 +1,8 @@
+backend/data/em_image
+backend/data/em_image_txt
+backend/data/img.sql
+backend/data/final_text_encoder_4.pt
+backend/conf/app.ini
+.DS_Store
+frontend/node_modules/
+frontend/public/image_dataset
