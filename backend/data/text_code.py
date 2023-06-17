@@ -50,7 +50,7 @@ if __name__ == '__main__':
     device = torch.device("cpu")
     list_em_image, list_image = load_em_image("./data/em_image", device)
     em_text = text_embedding(input_data, device)
-    img, sim = search(em_text, list_em_image, list_image, 0.53)
+    img, sim = search(em_text, list_em_image, list_image, 0.30)
     out = []
     for i, j in zip(img, sim):
         out.append(f"{i}-{j}")

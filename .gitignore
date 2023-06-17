@@ -4,4 +4,6 @@ backend/data/final_text_encoder_4.pt
 backend/conf/app.ini
 .DS_Store
 frontend/node_modules/
-frontend/public/image_dataset
+frontend/public/image_dataset/
+backend/data/testset1/
+backend/data/final_visual.pt

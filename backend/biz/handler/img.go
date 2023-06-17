@@ -49,6 +49,18 @@ func GetImgsById(c context.Context, ctx *app.RequestContext) {
 	s := string(out)
 	// string to list
 	items := strings.Split(s[1:len(s)-2], ",")
+	if(len(items) < 2) {
+		hlog.Infof("handler.GetImgsById len(items): %v, nothing returned", len(items))
+		ctx.JSON(consts.StatusOK, utils.Response{
+			Code: consts.StatusOK,
+			Msg:  "succeed",
+			Data: nil,
+		})
+		return
+	}
+	// log the length of items
+	hlog.Infof("handler.GetImgsById len(items): %v", len(items))
+	hlog.Infof("handler.GetImgsById items: %v", items)
 	ids := make([]string, len(items))
 	accs := make([]string, len(items))
 	for i := 0; i < len(items); i++ {
@@ -59,7 +71,6 @@ func GetImgsById(c context.Context, ctx *app.RequestContext) {
 		accs[i] = bound[1]
 	}
 	imgMap, err := a.Get(ids, accs)
-
 	if err != nil {
 		ctx.JSON(consts.StatusOK, utils.Response{
 			Code: consts.StatusInternalServerError,

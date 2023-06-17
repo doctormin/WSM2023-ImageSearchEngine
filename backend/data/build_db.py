@@ -17,7 +17,7 @@ def main():
         f.write("   `image` varchar(255) DEFAULT NULL,\n")
         f.write("   PRIMARY KEY (`id`)\n")
         f.write(") ENGINE=InnoDB DEFAULT CHARSET=utf8;\n")
-        for dirpath, _, filenames in os.walk('../frontend/public/image_dataset'):
+        for _, _, filenames in os.walk('../../frontend/public/image_dataset'):
             for file in filenames:
                 id = file.split(".")[0]
                 path = "/image_dataset/" + file

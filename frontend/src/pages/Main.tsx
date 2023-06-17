@@ -22,11 +22,12 @@ function Body(props: {keyword: string;}) {
   console.log("Main page searching... imgs -> ", imgs)
   console.log("Main page searching... keyword -> ", props.keyword);
   cards =
-    imgs === undefined
-      ? () => <div />
+    (imgs === undefined || imgs === null)
+      ? <ImgCard id={""} acc={"nothing found"} image={"/not_found.png"} />
       : Object.values(imgs).map((i) => (
           <ImgCard id={i.id.toString()} acc={i.acc} image={i.image} />
         ));
+  console.log(cards)
   return (
     <main>
       <div className="section-content section-content-evaluate-symptoms">
