@@ -1,7 +1,10 @@
+## Description
+This is a demo of a text2image search engine web application that can run locally. This is dedicated to be submitted at SJTU-WSM2023 course.
+
 **Run locally**
-1. Prepare the DataBase on your local test machine
+1. Prepare the database on your local test machine
    -  Run `./backend/data/img.sql` in a DBMS (I use MySQL)
-   -  Create app.ini file in `./backend/conf` filling in the DBMS info (see `./backend/conf/app.ini.example`)
+   -  Create `app.ini` file in `./backend/conf` filling in the DBMS info (see `./backend/conf/app.ini.example`)
 2. Prepare the PyTorch env according to `./backend/data/README.txt`
 3. Start the backend
    -  Install Golang dev env
