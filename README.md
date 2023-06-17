@@ -5,9 +5,9 @@ This is a demo of a text2image search engine web application that can run locall
 - The backend is built with [Hertz](https://github.com/cloudwego/hertz/blob/develop/README_cn.md) in Golang
 - The text_encoding and img_encoding abilities are built with PyTorch + CLIP
 
-**recommanded**: to have a glimpse of this demo, you can directly wathch the `demo_vide.mp4`.
+**Recommanded**: to have a glimpse of this demo, you can directly wathch the `demo_vide.mp4`.
 
-**authors**: This project is equally contributed by [@doctormin](https://github.com/doctormin), [@Zheng Chen](https://github.com/zhengchen1999), [@Yijia Diao](https://github.com/LittleQili), [@XD W](https://github.com/xudoong).
+**Authors**: this project is equally contributed by [@doctormin](https://github.com/doctormin), [@Zheng Chen](https://github.com/zhengchen1999), [@Yijia Diao](https://github.com/LittleQili), [@XD W](https://github.com/xudoong).
 
 ## System Design
 <img src="./system_design.jpg" width="600">
