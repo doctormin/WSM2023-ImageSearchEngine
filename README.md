@@ -8,10 +8,10 @@ This is a demo of a text2image search engine web application that can run locall
 **recommanded**: to have a glimpse of this demo, you can directly wathch the `demo_vide.mp4`
 
 ## System Design
-<img src="./system_design.jpg" width="400">
+<img src="./system_design.jpg" width="600">
 
 ## UI Design
-<img src="./UI_design.png" width="400">
+<img src="./UI_design.png" width="600">
 
 ## Run locally
 1. Put the image dataset folder into `./frontend/public/` and rename the folder to `img_dataset`
